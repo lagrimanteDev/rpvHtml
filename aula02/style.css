@@ -1,0 +1,35 @@
+.imagem{
+    width: 400px;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.sans-serif {
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.ingredientes {
+    background-color: rgba(14, 212, 14, 0.342);
+    margin: 10px;
+    padding: 10px;
+}
+
+.modoDePreparo {
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+
+    h2 {
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 48px;
+    }
+}
+
+h1 {
+    color: #FF5B0D;
+}
