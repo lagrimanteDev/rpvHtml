@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: beige;
+    position: sti;
+    top: 0;
+    left: 0;
+    /* height: 40px; */
+}
+
+/* main {
+    margin-top: 40px;
+} */
+
+ul {
+    display: flex;
+    gap: 10px;
+
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: #202020;
+    transition: all 3s ease-in-out;
+
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    transition: all 1s ease-in;
+}
+
+button:hover {
+    background-color: #202020;
+    color: #fafafa;
+    font-size: 36px;
+    padding: 40px;
+}
+
+li:last-child {
+    background-color: yellow;
+}
+
+li:first-child {
+    background-color: blue;
+}
+
+a:hover {
+    background-color: aqua;
+    font-size: 20px;
+}
+
+
+.secao {
+    min-height: 100vh;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}

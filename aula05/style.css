@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#central {
+    border: 5px solid rgb(183, 0, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#principal {
+    border: 5px solid red;
+    width: 50vh;
+    height: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#caixaAcima {
+    border: 2px solid blue;
+    width: 48vh;
+    height: 70vw;
+    flex-direction: column;
+    position: relative;
+
+}
+
+
+#caixaAbaixo {
+    border: 2px solid black;
+    width: 48vh;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+#cores {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+    border: 2px solid rgb(0, 255, 128);
+
+}
+
+#elementos {
+    position: absolute;
+    left: 5px;
+}
+
+
+#nomeProduto {
+    border: 2px solid red;
+}
+
+#valores {
+    border: 2px solid rgb(225, 0, 255);
+
+}
+
+#lorem {
+    border: 2px solid rgb(0, 255, 0);
+
+}
+
+#bola1 {
+    background-color: rgb(250, 229, 185);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#bola2 {
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#bola3 {
+    background-color: rgb(243, 205, 36);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#bola4 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}

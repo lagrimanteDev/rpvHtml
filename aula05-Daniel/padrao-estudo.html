@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de CSS: Flexbox</title>
+    <style>
+        /* --- ESTILO DA ESTRUTURA DA PÁGINA (A "SALA DE AULA") --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 { color: #2c3e50; }
+        p.subtitle { color: #666; }
+
+        /* O Componente "Card de Aula" */
+        .aula-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .aula-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .aula-header h2 { margin: 0; font-size: 1.2rem; }
+
+        .aula-body {
+            display: flex;
+            flex-wrap: wrap; /* Responsivo para mobile */
+        }
+
+        /* Área do Código (Esquerda) */
+        .area-codigo {
+            flex: 1;
+            background-color: #282c34; /* Tema escuro tipo IDE */
+            color: #abb2bf;
+            padding: 20px;
+            min-width: 300px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .tag { color: #e06c75; }
+        .attr { color: #d19a66; }
+        .val { color: #98c379; }
+        .prop { color: #61afef; }
+        
+        /* Área Visual (Direita) */
+        .area-visual {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-left: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 300px;
+        }
+        
+        .area-visual h3 {
+            margin-top: 0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #888;
+            letter-spacing: 1px;
+        }
+
+        /* --- ESTILOS DOS EXEMPLOS PRÁTICOS (O QUE O ALUNO VÊ) --- */
+        
+        /* Container Padrão para visualização */
+        .demo-container {
+            border: 2px dashed #ccc; /* Borda tracejada para mostrar o limite do container */
+            background-color: #eee;
+            height: 150px; /* Altura fixa para ver o alinhamento vertical */
+            width: 100%;
+        }
+
+        /* O "Quadrado" (Item filho) */
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 1px solid #2980b9;
+        }
+
+        /* --- CLASSES ESPECÍFICAS DO EXEMPLO SOLICITADO --- */
+        
+        /* Aqui aplicamos exatamente o CSS que está escrito no bloco de código */
+        .exemplo-flex-start {
+            display: flex;
+            align-items: flex-start; /* O comando principal */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Módulo 1: Display & Position</h1>
+        <p class="subtitle">Entendendo o comportamento dos elementos</p>
+    </header>
+
+    <div class="aula-card">
+        <div class="aula-header">
+            <h2>Exemplo 01: Flex Container & Align Items</h2>
+        </div>
+        <div class="aula-body">
+            
+            <div class="area-codigo">
+<pre>
+<span class="tag">.container</span> {
+  <span class="prop">display</span>: <span class="val">flex</span>;
+  <span class="prop">align-items</span>: <span class="val">flex-start</span>;
+  <span class="prop">height</span>: <span class="val">150px</span>;
+}
+
+<span class="tag">.item</span> {
+  <span class="prop">width</span>: <span class="val">50px</span>;
+  <span class="prop">height</span>: <span class="val">50px</span>;
+}
+</pre>
+            </div>
+
+            <div class="area-visual">
+                <h3>Resultado Renderizado:</h3>
+                
+                <div class="demo-container exemplo-flex-start">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                </div>
+                
+                <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">
+                    * Note como os itens "flutuam" para o topo (início do eixo transversal).
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
