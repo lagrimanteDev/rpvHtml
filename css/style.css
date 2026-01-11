@@ -1,5 +1,5 @@
 :root {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   /* A linha acima transforma 1rem = 10px */
 }
 
@@ -40,11 +40,12 @@ ul {
   list-style: none;
 }
 
-li > a {
+li>a {
   text-decoration: none;
   color: #fafafa;
   transition: all 0.3s ease;
   font-size: 1.6rem;
+
   &:hover {
     color: #fff;
     border-bottom: 1px solid #fafafa;
@@ -101,7 +102,7 @@ button:hover {
   gap: 16px;
 }
 
-h2 {
+#cursos h2 {
   font-size: 2.4rem;
   color: #f3f3f3;
 }
@@ -122,8 +123,66 @@ h2 {
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.card:hover {
-  transform: scale(1.1);
+#sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    padding: 16px;
+  }
+}
+
+
+
+#contatos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+
+  h2 {
+    font-size: 2.4rem;
+    color: #f3f3f3;
+  }
+
+  p {
+    font-size: 1.6rem;
+    color: #f3f3f3;
+    padding: 16px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 1.6rem;
+  }
+
+  ion-icon{
+    margin: 8px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+    left: 39%;
+  }
+}
+
+.acessoContato{
+  display: flex;
+  margin: 8px;
 }
